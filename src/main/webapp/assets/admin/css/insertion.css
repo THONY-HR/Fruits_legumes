@@ -1,0 +1,48 @@
+    main#app {
+    padding: 100px;
+  }
+  
+  .insertion-links {
+    width: 96.9%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .insertion-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .insertion-links li {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+  }
+  
+  .insertion-links a {
+    font-family: 'RubReg';
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .insertion-links a:hover {
+    background-color: #1cbf47;
+    color: #fff;
+  }
+  

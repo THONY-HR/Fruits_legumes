@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'FigtreeReg';
+    src : url(../Fonts/Figtree-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FigtreeMed';
+    src : url(../Fonts/Figtree-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FigtreeBold';
+    src : url(../Fonts/Figtree-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RubReg';
+    src : url(../Fonts/Rubik-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RubBold';
+    src : url(../Fonts/Rubik-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RubMed';
+    src : url(../Fonts/Rubik-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

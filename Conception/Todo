@@ -1,0 +1,173 @@
+### Todo Liste pour le Projet Fruits et Légumes Store
+Le temps total estimé pour la réalisation de ces tâches est de **12 heures et 30 minutes**.
+---
+
+## Côté Client
+
+### **Connexion :**
+**Affichage :** (15 minutes)
+- Formulaire
+  - Email
+  - Mot de passe
+- Bouton (Se connecter)
+
+**Fonction :** (20 minutes)
+- `connexion(email, mot_de_passe)`
+  - true --> Retourne un objet (Utilisateur)
+  - false --> Message d'erreur (Mot de passe ou email incorrect)
+
+**Intégration (Servlet) :** (30 minutes)
+- **Authentification (Do post)**
+  - Récupération des entrées (email, mot_de_passe)
+  - Appel de la fonction connexion(email, mot_de_passe)
+
+---
+
+### **Inscription :**
+**Affichage :** (20 minutes)
+- Formulaire
+  - Nom
+  - Email
+  - Mot de passe
+  - Confirmation de mot de passe
+  - Téléphone
+
+**Fonction :** (25 minutes)
+- `inscription(nom, email, mot_de_passe, telephone)`
+  - Validation des champs
+  - Insertion dans la base de données
+
+**Intégration (Servlet) :** (30 minutes)
+- **Enregistrement (Do post)**
+  - Récupération des champs
+  - Appel de la fonction inscription
+
+---
+
+### **Produits :**
+**Affichage :** (25 minutes)
+- Liste des produits avec :
+  - Image
+  - Nom
+  - Description
+  - Prix
+  - Quantité disponible
+  - Bouton (Ajouter au panier)
+
+**Fonction :** (30 minutes)
+- `afficherProduits()` --> Liste des produits
+- `ajouterAuPanier(produit_id, quantite)` --> Ajoute un produit au panier
+
+**Intégration (Servlet) :** (35 minutes)
+- **Produits (Do get)**
+  - Récupération des produits depuis la base de données
+  - Affichage dynamique
+
+---
+
+### **Panier :**
+**Affichage :** (20 minutes)
+- Liste des produits ajoutés
+  - Nom
+  - Quantité
+  - Prix total
+  - Bouton (Supprimer)
+  - Bouton (Valider la commande)
+
+**Fonction :** (30 minutes)
+- `afficherPanier()` --> Affiche les articles ajoutés
+- `supprimerDuPanier(produit_id)` --> Supprime un produit
+- `validerCommande()` --> Passe la commande
+
+**Intégration (Servlet) :** (40 minutes)
+- **Panier (Do post)**
+  - Gérer les modifications du panier
+  - Valider la commande
+
+---
+
+### **Commandes :**
+**Affichage :** (15 minutes)
+- Historique des commandes avec :
+  - Date
+  - Statut
+  - Total
+
+**Fonction :** (20 minutes)
+- `afficherCommandes(utilisateur_id)` --> Liste des commandes de l'utilisateur
+
+**Intégration (Servlet) :** (25 minutes)
+- **Commandes (Do get)**
+  - Affichage des commandes pour l'utilisateur connecté
+
+---
+
+### **Paiements :**
+**Affichage :** (20 minutes)
+- Formulaire de paiement
+  - Méthode de paiement (Carte, PayPal, etc.)
+  - Informations de paiement
+
+**Fonction :** (25 minutes)
+- `traiterPaiement(commande_id, methode_payement_id, montant)`
+  - Validation des informations
+  - Mise à jour du statut
+
+**Intégration (Servlet) :** (30 minutes)
+- **Paiements (Do post)**
+  - Validation des paiements
+
+---
+
+### **Livraisons :**
+**Affichage :** (20 minutes)
+- Informations de livraison
+  - Adresse
+  - Ville
+  - Code postal
+  - Date prévue
+
+**Fonction :** (25 minutes)
+- `ajouterLivraison(commande_id, adresse, ville, code_postal)`
+  - Enregistrement des informations de livraison
+
+**Intégration (Servlet) :** (30 minutes)
+- **Livraisons (Do post)**
+  - Validation des détails de livraison
+
+---
+
+### **Avis des clients :**
+**Affichage :** (15 minutes)
+- Liste des avis
+  - Nom utilisateur
+  - Note (1 à 5)
+  - Commentaire
+  - Date
+  - Bouton (Ajouter un avis)
+
+**Fonction :** (20 minutes)
+- `ajouterAvis(utilisateur_id, produit_id, note, commentaire)`
+  - Validation et insertion dans la base de données
+
+**Intégration (Servlet) :** (25 minutes)
+- **Avis (Do post)**
+  - Enregistrement des avis
+
+---
+
+### **Gestion Admin :**
+**Produits :** (40 minutes)
+- Ajouter, modifier, ou supprimer un produit
+
+**Utilisateurs :** (30 minutes)
+- Gestion des rôles (admin, client)
+
+**Commandes :** (30 minutes)
+- Mise à jour des statuts des commandes
+
+**Paiements :** (30 minutes)
+- Validation des paiements et remboursement
+
+**Livraisons :** (30 minutes)
+- Suivi et mise à jour des statuts

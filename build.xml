@@ -1,0 +1,71 @@
+<project name="Produit_Agricole" default="deploy" basedir=".">
+    <!-- Définition des propriétés -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="build.dir" value="build/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="webapp.dir" value="src/main/webapp"/>
+    <property name="lib.dir" value="D:/ITU DS PROM 3/S5/Gestion de projet/Fruits_Legumes/lib"/>
+    <property name="standalone.dir" value="D:/Logiciel/wildfly-10.0.0.Final/standalone/deployments"/>
+
+    <!-- Dépendances spécifiques -->
+    <property name="servlet.api.jar" value="${lib.dir}/servlet-api.jar"/>
+    <property name="ejb.api.jar" value="${lib.dir}/javax.ejb.jar"/>
+    <property name="HikariCP.jar" value="${lib.dir}/HikariCP-5.0.1.jar"/>
+
+    <!-- Classpath -->
+    <path id="classpath">
+        <pathelement path="${servlet.api.jar}"/>
+        <pathelement path="${ejb.api.jar}"/>
+        <pathelement path="${HikariCP.jar}"/>
+        <fileset dir="${lib.dir}">
+            <include name="jackson-databind-*.jar"/>
+            <include name="jackson-core-*.jar"/>
+            <include name="jackson-annotations-*.jar"/>
+            <include name="javax.ws.rs-api-2.1.1.jar"/>
+            <include name="jersey-common-2.27.jar"/>
+            <include name="jersey-container-servlet-2.27.jar"/>
+            <include name="jersey-media-json-jackson-2.27.jar"/>
+            <include name="jersey-server-2.27.jar"/>
+        </fileset>
+    </path>
+
+
+    <!-- Cible de nettoyage -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <!-- Compilation -->
+    <target name="compile" depends="clean">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath refid="classpath"/>
+        </javac>
+        <!-- Copier les fichiers nécessaires -->
+        <copy todir="${build.dir}/lib">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.dir}/org">
+            <fileset dir="${lib.dir}/org"/>
+        </copy>
+        <copy todir="${build.dir}/lib">
+            <fileset dir="${lib.dir}"/>
+        </copy>
+    </target>
+
+    <!-- Génération du fichier WAR -->
+    <target name="war" depends="compile">
+        <mkdir dir="${dist.dir}"/>
+        <war destfile="${dist.dir}/Produit_Agricole.war" webxml="${webapp.dir}/WEB-INF/web.xml">
+            <fileset dir="${webapp.dir}"/>
+            <classes dir="${build.dir}"/>
+        </war>
+    </target>
+
+    <!-- Déploiement -->
+    <target name="deploy" depends="war">
+        <copy file="${dist.dir}/Produit_Agricole.war" todir="${standalone.dir}"/>
+    </target>
+</project>

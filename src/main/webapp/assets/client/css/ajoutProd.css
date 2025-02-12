@@ -1,0 +1,35 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.texte h3{
+    font-size: 90px;
+    font-family: 'RubMed';
+    color: rgb(68, 62, 62);
+}
+
+.texte a{
+    width: 70%;
+    background-color: rgb(255, 179, 0);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color : rgb(33, 30, 30);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'RubReg';
+    border-radius: 20px;
+}
+
+.texte a:hover{
+    background-color: rgb(236, 174, 28);
+    color: white;
+}

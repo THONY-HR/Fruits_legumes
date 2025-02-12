@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  margin-top: 60px; 
+}
+
+main {
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(to right, #1eb94a, #69df49);
+  box-shadow: 0 4px 6px rgba(28, 26, 26, 0.512);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 80px; /* Fixer la hauteur de la barre de menu */
+}
+
+header .logo {
+  /* margin-right: 20px; */
+  margin-left: 30px;
+}
+
+header .logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+header nav {
+  display: flex; /* Utilisez flex pour tout aligner sur la même ligne */
+  align-items: center; /* Centrer verticalement tous les éléments */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Aligner horizontalement les éléments */
+}
+
+nav ul li {
+  display: flex; /* Utilisez flex pour un meilleur alignement */
+  align-items: center; /* Centrer verticalement les éléments du menu */
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'FigtreeReg';
+  transition: color 0.3s ease; /* Retirer l'impact sur la taille de l'élément */
+  padding: 0; /* Assurer qu'il n'y a pas de padding supplémentaire */
+}
+
+nav ul li a:hover {
+  color: #5e5959; /* Le changement de couleur sans toucher à la taille */
+  border-radius: 5px;
+  padding: 0; /* Enlever le padding pour éviter l'agrandissement */
+}
+
+.person-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5e5959; /* Couleur du texte par défaut */
+  margin: 0; /* Enlever toute marge indésirable */
+}
+
+.person-name {
+  margin-right: 10px; /* Espace entre le texte et l'image */
+  font-size: 16px;
+  font-family: 'FigtreeBold'; /* Style de police pour le nom */
+}
+
+.person-image {
+  width: 50px; /* Taille de l'image */
+  height: 50px; /* Taille de l'image */
+  border-radius: 50%; /* Pour faire un cercle */
+  object-fit: cover; /* Assure que l'image couvre le cercle sans déformation */
+  display: block; /* Permet de centrer l'image correctement dans son conteneur */
+  margin: 0; /* Éviter les marges indésirables */
+}
+
+.person-link:hover {
+  color: white; /* Couleur du texte au survol */
+}
+
+.person-link:hover .person-name {
+  color: white; /* Appliquer le changement de couleur uniquement au nom de la personne */
+}
+
+button {
+  background-color: #ddc210;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: RubReg;
+  border-radius: 16px;
+}
+
+button:hover {
+  background-color: #edd435;
+  color: rgb(61, 60, 58);
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'RubReg';
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

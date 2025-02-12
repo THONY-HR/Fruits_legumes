@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  margin-top: 60px; 
+}
+
+main {
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(to right, #1eb94a, #69df49);
+  box-shadow: 0 4px 6px rgba(28, 26, 26, 0.512);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 80px;
+}
+
+header .logo {
+  margin-left: 30px;
+}
+
+header .logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  align-items: center; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'FigtreeReg';
+  transition: color 0.3s ease; 
+  padding: 0;
+}
+
+nav ul li a:hover {
+  color: #5e5959;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.person-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5e5959;
+}
+
+.person-name {
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: 'FigtreeBold';
+}
+
+.person-image 
+{
+  width: 50px;
+   display: block;
+   margin: 0;
+}
+
+.person-link:hover {
+  color: white; }
+
+.person-link:hover .person-name {
+  color: white;
+}
+
+button {
+  background-color: #ddc210;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: RubReg;
+  border-radius: 16px;
+}
+
+button:hover {
+  background-color: #edd435;
+  color: rgb(61, 60, 58);
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'RubReg';
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

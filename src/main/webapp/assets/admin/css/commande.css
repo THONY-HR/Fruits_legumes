@@ -1,0 +1,80 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+.historique-commandes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: rgb(244, 159, 49);
+    font-family: 'RubMed';
+}
+
+.commandes-container {
+    width: 1200px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.commande-item {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.commande-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-family: 'RubMed';
+}
+
+.commande-item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    font-family: 'RubReg';
+}
+
+.total{
+    text-align: right;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+}

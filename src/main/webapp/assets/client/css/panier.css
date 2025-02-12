@@ -1,0 +1,140 @@
+ body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.panier {
+  padding: 40px;
+  /* background-color: #0ce3ce; */
+  width: 1190px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.panier-top {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.colonne {
+  display: flex;
+  gap: 30px;
+}
+
+.title{
+  font-size: 40px;
+  color: rgb(75, 75, 72);
+  font-family: 'RubMed';
+}
+
+.link{
+    background-color: rgb(255, 213, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgb(52, 49, 49);
+    font-family: 'RubReg';
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+
+.link:hover {
+  background-color: #ebaa28;
+  color :white;
+}
+
+
+.produits-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 1300px;
+  gap: 20px;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produit-card {
+  width: 400px;
+  height: 160px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.total {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.total p {
+  font-size: 30px;
+  color: #c9302c;
+  margin-bottom: 20px;
+  font-family: 'RubReg';
+}
+
+
+.produit-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-top:11px;
+  margin-right: 10px;
+}
+
+.produit-card h3 {
+  font-size: 18px;
+  font-family: 'RubMed';
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.produit-card p {
+  font-size: 14px;
+  font-family: 'RubReg';
+  color: #3e3939;
+  text-align: center;
+}
+
+.quantite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantite button {
+  background-color: #ce9f29;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quantite button:hover {
+  background-color: #d3a13b;
+}
+
+.quantite input {
+  width: 60px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+} 

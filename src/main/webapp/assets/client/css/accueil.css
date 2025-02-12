@@ -1,0 +1,215 @@
+/* ----- GLOBAL ----- */
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-block-start: 50px !important;
+}
+
+body {
+  background-color: #F6F6F6;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Ajustez selon vos besoins */
+}
+
+/* ----- BANNIÈRE & CONTENU ----- */
+.banniere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  max-width: 100%;
+}
+
+.contenu-banniere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 90vh;
+  padding: 0 20px; /* Assure un padding à gauche et à droite */
+}
+
+.partie1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Si vous voulez réellement décaler l'image, préférez un margin négatif plutôt que padding */
+/* .partie1 img {
+    width: 100%;
+    max-width: 500px;
+    margin-left: -80px; 
+} */
+.partie1 img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.partie2 {
+  flex: 1;
+  padding-right: 35px;
+  color: #333;
+  position: relative;
+  top: -80px; /* Déplace la section vers le haut. Ajustez selon votre design. */
+}
+
+.partie2 h3 {
+  color: #ff9800;
+  font-family: 'RubMed';
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  top: 50px; /* Ajustez selon vos besoins */
+}
+
+.partie2 p {
+  color: #636060;
+  font-family: 'RubReg';
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  top: 35px; /* Ajustez selon vos besoins */
+}
+
+/* ----- BOUTON DE LA BANNIÈRE ----- */
+.btn-banniere {
+  display: inline-block;
+  background-color: #ecd037;
+  color: rgb(75, 75, 72);
+  width: 40%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'RubReg';
+  border: none;
+  border-radius: 30px;
+  padding: 15px 15px;
+  margin-top: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-banniere:hover {
+  background-color: #c3a80d !important;
+  color: white !important;
+}
+
+/* ----- SECTION "CATALOGUE" ----- */
+.catalogue {
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.catalogue h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: rgb(48, 52, 48);
+  font-family: 'RubMed';
+}
+
+.filtre {
+  margin-bottom: 20px;
+}
+
+.filtre select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* ----- LISTE DES PRODUITS ----- */
+.produits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.produit-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  /* Augmentez ici la hauteur */
+  min-height: 370px; /* Ou la valeur de votre choix */
+}
+
+
+.produit-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+
+.produit-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'RubBold';
+  text-align: center;
+}
+
+.produit-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  font-family: 'RubReg';
+  flex-grow: 1;
+  text-align: center;
+}
+
+.produit-card span {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  font-family: 'RubReg';
+  text-align: center;
+  display: block; /* Permet d’éviter les <br> successifs si besoin */
+}
+
+/* Vous pouvez personnaliser davantage les infos de promo :
+   .produit-card .promo {
+       color: #ff9800;
+       font-weight: bold;
+       margin-top: 5px;
+   }
+*/
+
+.produit-card h5 {
+  font-size: 14px;
+  color: #ff9800;
+  margin-bottom: 20px;
+  font-family: 'RubMed';
+  text-align: center;
+}
+
+.produit-card button {
+  border: 2px solid #ce9f29;
+  color: #ce9f29;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'RubReg';
+  margin-top: auto; /* Pour pousser le bouton en bas de la card */
+}
+
+.produit-card button:hover {
+  background-color: #ce9f29;
+  color: white;
+}

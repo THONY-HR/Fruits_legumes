@@ -1,0 +1,106 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/background/image5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-dashboard {
+  max-width: 1200px;
+  min-width: 800px;
+  min-height: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff9800;
+  font-family: 'RubMed';
+  font-size: 24px;
+}
+
+.admin-dashboard h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #5fc555;
+  font-family: 'RubMed';
+}
+
+.produit-item,
+.commande-item {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produit-item h3,
+.commande-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-family: 'RubMed';
+}
+
+.produit-item p,
+.commande-item p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+  font-family: 'RubReg';
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .produit-item,
+  .commande-item {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+}

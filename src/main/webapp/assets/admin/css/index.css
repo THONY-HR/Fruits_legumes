@@ -1,0 +1,200 @@
+body{
+  background-color: #FFFFFF;
+}
+
+.banniere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.banniere {
+  max-width: 100%;
+}
+
+.contenu-banniere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 90vh;
+  padding: 0 20px; /* Assurer un padding gauche et droite */
+}
+
+.partie1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.partie1 img {
+  width: 100%;
+  max-width: 500px;
+  padding-left: -80px;
+}
+
+.partie2 {
+  flex: 1;
+  padding-right: 35px;
+  color: #333;
+  position: relative;
+  top: -80px; /* Déplace la section vers le haut */
+}
+
+.partie2 h3 {
+  color: #ff9800;
+  font-family: 'RubMed';
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  top: 50px; /* Déplace le titre vers le haut */
+}
+
+.partie2 p {
+  color: #636060; 
+  font-family: 'RubReg';
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  top: 35px; /* Déplace la description vers le haut */
+}
+
+
+.btn-banniere {
+  display: inline-block;
+  background-color: #ecd037;
+  width: 40%;
+  color: rgb(75, 75, 72);
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px; /* Augmenter la taille du bouton */
+  border-radius: 5px;
+  margin-top: 30px; /* Espacement plus grand sous le texte */
+  transition: background-color 0.3s ease;
+  font-family: 'RubReg';
+  margin-top: 60px;
+}
+
+.btn-banniere:hover {
+  background-color: #c3a80d !important;
+  color: white !important;
+}
+
+.btn-banniere {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ecd037;
+  color: rgb(75, 75, 72);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-banniere:hover {
+  background-color: #ecd037;
+}
+
+.catalogue {
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-block-start: 50px !important;
+}
+
+.produits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.produit-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  height: 300px;
+}
+
+.produit-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+
+.produit-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'RubBold';
+  text-align: center;
+}
+
+.produit-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  font-family: 'RubReg';
+  flex-grow: 1;
+  text-align: center;
+}
+
+.produit-card h5 {
+  font-size: 14px;
+  color: #ff9800;
+  margin-bottom: 20px;
+  font-family: 'RubMed';
+  text-align: center;
+}
+
+.produit-card button {
+  border: 2px solid #ce9f29;
+  color: #ce9f29;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'RubReg';
+  margin-top: auto;
+}
+
+.produit-card button:hover {
+  background-color: #ce9f29;
+  color: white;
+}
+
+.catalogue h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: rgb(48, 52, 48);
+  font-family: 'RubMed';
+}
+
+.filtre {
+  margin-bottom: 20px;
+}
+
+.filtre select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
